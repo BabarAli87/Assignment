@@ -7,19 +7,18 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
   <title>Cogent Assignment</title>
 </head>
 <body>
-  <div>
-    <nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light mb-3">
       <div class="container-fluid gap-5">
-        <a class="navbar-brand" href="#"><img class="img-fluid" src="./assets/images/udix..png"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <a class="navbar-brand pb-3" href="/"><img class="img-fluid" src="./assets/images/udix..png"></a>
+        <button class="btn btn-outline-success theme-btn d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">MENU</button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-5">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">HOME</a>
             </li>
@@ -34,12 +33,172 @@
             </li>
           </ul>
           <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+            <button class="btn btn-outline-success signin-btn me-4" type="submit">SIGN IN</button>
+            <button class="btn btn-outline-success theme-btn" type="submit">SIGN UP</button>
           </form>
         </div>
       </div>
     </nav>
+    <section class="mb-5 py-3">
+        <div class="text-center py-5">
+            <h1 class="banner-heading mb-5">
+              Get It Together And Manage<br>
+              Projects the Right Way.
+            </h1>
+            <p class="desc-text">
+              udix is the world’s first smart workspace. We bring all your team’s <br>
+              content together while letting you use the tools you love.
+            </p>
+        </div>
+        <form class="row g-3 justify-content-center">
+          <div class="col-auto">
+            <label for="inputPassword2" class="visually-hidden">Password</label>
+            <input type="password" class="form-control w-100" id="inputPassword2" placeholder="Email">
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-3 subscribe-btn">Subscribe</button>
+          </div>
+        </form>
+    </section>
+    <section class="mt-4 pb-3 mb-5">
+      <div class="text-center mb-5">
+        <h2 class="hero-heading">
+          Solutions that will change your business forever
+        </h2>
+        <p class="desc-text">
+          Some networks believe that by only offering a basic tracking system their affiliates can reach a high level of creativity. We like to set 
+          <br>the bar a lot higher by offering you cutting-edge tech solutions together with a team of creative experts.
+        </p>
+      </div>
+      <div class="row justify-content-center">
+          <div class="col-lg-3">
+            <div class="first-box">
+              <img class="box-icons mb-3" src="./assets/images/Vector2.png" alt="">
+              <h4 class="pt-3 box-heading">
+                Web Services
+              </h4>
+              <p class="py-3 box-text">
+                Some networks believe that by only offering. 
+              </p>
+              <img class="arrow-icon" src="./assets/images/Vector (Stroke).png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="box">
+              <img class="box-icons mb-3" src="./assets/images/Vector1.png" alt="">
+              <h4 class="pt-3 box-heading">
+                CRM Product
+              </h4>
+              <p class="py-3 box-text">
+                Some networks believe that by only offering. 
+              </p>
+              <img class="arrow-icon" src="./assets/images/Vector (Stroke)2.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="box">
+              <img class="box-icons mb-3" src="./assets/images/Group.png" alt="">
+              <h4 class="pt-3 box-heading">
+                 Mobile App
+              </h4>
+              <p class="py-3 box-text">
+                Some networks believe that by only offering.  
+              </p>
+              <img class="arrow-icon" src="./assets/images/Vector (Stroke)2.png" alt="">
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <section class="info-section pb-3 mb-5">
+     <div class="banner-img gap-15">
+      <div class="">
+        <h4 class="info-section-heading mb-3 text-center">
+          1,000 M
+        </h4>
+        <p class="info-section-text">
+          Clicks annually through system
+        </p>
+      </div>
+      <div class="">
+        <h4 class="info-section-heading mb-3 text-center">
+          4.8 M
+        </h4>
+        <p class="info-section-text">
+          Clicks annually through system
+        </p>
+      </div>
+      <div class="">
+        <h4 class="info-section-heading mb-3 text-center">
+          100 +
+        </h4>
+        <p class="info-section-text">
+          Clicks annually through system
+        </p>
+      </div>
+     </div>
+     <button type="submit" class="btn btn-primary mb-3 subscribe-btn info-sectionBtn">Sign Up Now!</button>
+    </section>
+    <section class="end-section pt-3 pb-5">
+      <div class="container">
+          <div class="row end-banner">
+            <div class="col-lg-6">
+              <img class="end-img" src="./assets/images/image-1.png" alt="">
+            </div>
+            <div class="col-lg-6">
+              <div class="py-4">
+                <h3 class="mb-4">
+                  Creativity & Technology
+                </h3>
+                <p class="end-section-text">
+                  Some networks believe that by only offering a basic tracking system their affiliates can reach a high level of creativity. We like to set the bar a lot higher by offering you cutting-edge tech solutions together with a team of creative experts on-call with the tools you need based on real-time results
+                </p>
+              </div>
+              <div class="py-4">
+                <h3 class="mb-4">
+                  Defines our true value
+                </h3>
+                <ul>
+                  <li class="end-section-text">Some networks believe that by only offering a basic tracking system</li>
+                  <li class="end-section-text">Some networks believe that by only offering a basic tracking system</li>
+                  <li class="end-section-text">Some networks believe that by only offering a basic tracking system</li>
+                </ul>
+                <p class="our-solution">
+                  Check Our Soultions <img src="./assets/images/Group 520.png" alt="">
+                </p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+    <footer class="FOOTER-BG mb-3">
+      <div class="row">
+        <div class="col-lg-5">
+          <a class="mb-3" href="/"><img src="./assets/images/udixfooter..png" alt=""></a>
+          <p class="mt-4">udix is a market-leading provider of digital marketing services, using proprietary tools and methodologies to generate high-value engagement for our customers.</p>
+        </div>
+        <div class="col-lg-7 d-flex  justify-content-center flex-wrap">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4 flex-row">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">BLOG</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">PRODUCT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACT</a>
+            </li>
+          </ul>
+          <form class="">
+            <button class="btn btn-outline-success signin-btn me-4" type="submit">SIGN IN</button>
+            <button class="btn btn-outline-success theme-btn" type="submit">SIGN UP</button>
+          </form>
+        </div>
+      </div>
+    </footer>
   </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

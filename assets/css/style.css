@@ -1,28 +1,185 @@
-.navbar .dropdown-toggle, .navbar .dropdown-menu a {
-    cursor: pointer;
+:root {
+    --purple: #381DDB;
+    --black:#000000;
+    --light-black:#222222;
+    --white: #FFFFFF;
+  }
+body{
+    font-family: 'Montserrat', sans-serif;
 }
-
-.navbar .dropdown-item.active, .navbar .dropdown-item:active {
-    color: inherit;
-    text-decoration: none;
-    background-color: inherit;
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
+    color: var(--purple);
 }
-
-.navbar .dropdown-item:focus, .navbar .dropdown-item:hover {
-    color: #16181b;
-    text-decoration: none;
-    background-color: #f8f9fa;
+.nav-link {
+    font-size: 14px;
+    font-weight: 600;
 }
+.signin-btn{
+    border: none;
+    color: var(--purple);
+    font-size: 14px;
+    font-weight: 600;
+}
+.signin-btn:hover{
+    border: none;
+    color: var(--purple);
+    background-color: transparent;
+}
+.signin-btn:focus{
+    box-shadow: none !important;
+}
+.theme-btn{
+    border-color: var(--purple);
+    color: var(--purple);
+border-radius: 0;
+font-size: 14px;
+font-weight: 600;
 
-@media (min-width: 767px) {
-    .navbar .dropdown-toggle:not(.nav-link)::after {
-        display: inline-block;
-        width: 0;
-        height: 0;
-        margin-left: .5em;
-        vertical-align: 0;
-        border-bottom: .3em solid transparent;
-        border-top: .3em solid transparent;
-        border-left: .3em solid;
+}
+.theme-btn:hover{
+    border-color: var(--purple);
+    color: var(--purple);
+    background-color: transparent;
+}
+.theme-btn:focus{
+    box-shadow: none !important;
+}
+.banner-heading{
+    font-weight: 700;
+    color: var(--black);
+}
+.desc-text{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--light-black);
+}
+.subscribe-btn{
+    border: none;
+    background-color: var(--purple);
+    padding: 7px 20px;
+}
+.hero-heading{
+    font-weight: 700;
+    color: var(--black);
+}
+.box-icons{
+    width: 70px;
+    height: 70px;
+}
+.first-box{
+    border: 1px solid var(--purple);
+    padding: 15px 15px;
+    background-color: var(--purple);
+    color: var(--white);
+    width: 280px;
+    height: 300px;
+}
+.box{
+    border: 1px solid var(--purple);
+    padding: 15px 15px;
+    color: var(--purple);
+    width: 280px;
+    height: 300px;
+}
+.box-heading{
+    font-size: 24px;
+    font-weight: 800;
+}
+.box-text{
+    font-size: 16px;
+    font-weight: 400;
+}
+.arrow-icon{
+    margin-bottom: -20px;
+}
+.banner-img {
+    background: url("../images/infobanner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+   
+}
+.gap-15{
+    gap: 7rem;
+}
+.info-section-heading{
+    font-size: 64px;
+    font-weight: 800;
+    color: var(--white);
+}
+.info-section-text{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white);
+    margin-bottom: 0;
+
+}
+.info-sectionBtn{
+    position: absolute;
+  /* top: 50%; */
+  left: 50%;
+  transform: translate(-50%, -255%);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 30px;
+}
+.end-section-text{
+line-height: 24px;
+color: var(--light-black);
+font-size: 16px;
+font-weight: 400;
+}
+.our-solution{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--purple);
+    margin-left: 15px;
+}
+.FOOTER-BG{
+    background-color: rgba(34, 34, 34, 0.03);
+    padding: 30px 10px;
+}
+@media screen and (max-width:1130px) {
+    .box{
+        width:auto;
+    }
+    .first-box{
+        width: auto;
+    }
+}
+@media screen and (max-width:992px) {
+    .box{
+        margin-top:12px;
+    }
+    .first-box{
+        margin-top:12px;
+        box-shadow: 0px 10px 40px rgba(34, 34, 34, 0.15);
+
+    }
+    .gap-15{
+        gap: 3rem;
+    }
+    .banner-img{
+        height: 650px;
+        align-items: initial;
+    }
+    .end-banner{
+        flex-wrap: wrap-reverse;
+    }
+    .end-img{
+        width: 335px;
+        height: 285px;
+    }
+}
+@media screen and (max-width:767px) {
+    .gap-15{
+        gap: 0rem;
+    }
+    .info-sectionBtn{
+  transform: translate(-50%, -115%);
     }
 }
