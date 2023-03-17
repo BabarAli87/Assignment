@@ -143,6 +143,12 @@ font-weight: 400;
     background-color: rgba(34, 34, 34, 0.03);
     padding: 30px 10px;
 }
+.footer-nav{
+    margin-right: 3rem;
+}
+.social-links{
+    justify-content: center;
+}
 @media screen and (max-width:1130px) {
     .box{
         width:auto;
@@ -174,6 +180,10 @@ font-weight: 400;
         width: 335px;
         height: 285px;
     }
+    .footer-nav{
+        margin-right: 0;
+    }
+  
 }
 @media screen and (max-width:767px) {
     .gap-15{
